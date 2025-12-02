@@ -1,0 +1,5 @@
+{
+  "name": "Spectrum News Analyzer",
+  "description": "A companion tool that analyzes news articles to provide bias detection, historical timelines, alternative perspectives, and deep-dive learning resources using AI.",
+  "requestFramePermissions": []
+}
