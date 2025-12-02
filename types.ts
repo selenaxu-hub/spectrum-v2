@@ -1,3 +1,4 @@
+
 export enum BiasCategory {
   FAR_LEFT = "Far Left",
   LEFT = "Left Leaning",
@@ -6,10 +7,14 @@ export enum BiasCategory {
   FAR_RIGHT = "Far Right"
 }
 
+export type TimelineStatus = 'past' | 'current' | 'upcoming';
+
 export interface TimelineEvent {
   date: string;
   title: string;
   description: string;
+  detailedDescription?: string;
+  status: TimelineStatus;
 }
 
 export interface Perspective {
@@ -17,6 +22,7 @@ export interface Perspective {
   biasCategory: string; // Simplistic string for display
   headline: string;
   summary: string;
+  url: string;
 }
 
 export interface Effect {
@@ -50,3 +56,6 @@ export interface ArticleAnalysis {
 
 export type ViewState = 'input' | 'analyzing' | 'results';
 export type TabState = 'overview' | 'timeline' | 'perspectives' | 'learn';
+
+export type Language = 'English' | 'Spanish' | 'French' | 'German' | 'Chinese' | 'Japanese';
+export type FontSize = 'normal' | 'large' | 'xlarge';
