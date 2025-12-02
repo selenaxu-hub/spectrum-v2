@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Spectrum News Analyzer",
+  "version": "1.0",
+  "description": "AI-powered news analysis side panel that provides bias detection, timelines, and perspectives.",
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "action": {
+    "default_title": "Analyze with Spectrum"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
